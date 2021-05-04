@@ -1,0 +1,685 @@
+<html lang="en">
+<body>
+<!--[if lte IE 9]>
+<p class="browserupgrade">You are using 
+an <strong>outdated</strong> browser. Please <a 
+href="https://browsehappy.com/">upgrade your browser</a> to 
+improve your experience and security.</p>
+<![endif]-->
+<aside id="gdprAgree" class="hidden bg-light" style="z-index: 10;width: 100%;font-size: 12px;padding:0">
+<div class="container container-bg">
+<div class="gdprAgree_info flexible flex-align-center flex-justify-center flex-wrap-wrap">This site uses cookies. By continuing to use this site you agree to our use of cookies
+in accordance with our &nbsp;<a href="https://www.tenorshare.com/cookies-privacy.html" target="_blank" class="text-underline">Cookie Policy</a>
+<a href="#" class="gdprAgree_btn">Agree</a>
+<a href="#" class="gdprAgree_close text-gray"><svg width="32" height="32" viewBox="0 0 24 24"> <use xlink:href="#close-path"></use> </svg></a>
+</div>
+</div>
+</aside>
+<aside>
+<svg display="none" version="1.1" xmlns="http://www.w3.org/2000/svg">
+<symbol id="mac-path" viewBox="0 0 24 24" fill="currentColor">
+<path d="M8.79
+ 13.55c0-2.312.923-5.246 2.409-7.657.733-1.189 1.54-2.154 2.379-2.86L2 
+3v17.968h11.234v-6.793H8.79v-.626zM7.185 9.792a.746.746 0 0 
+1-.74.751.746.746 0 0 1-.741-.75V7.54c0-.415.331-.752.74-.752.41 0 
+.741.337.741.752v2.253zM22 3l-5.984.032c-2.825.86-5.68 5.998-5.968 
+9.891h4.421v8.045L22 21V3zm-3.704 6.793a.746.746 0 0 1-.74.751.746.746 0
+ 0 1-.741-.75V7.54c0-.415.331-.752.74-.752.41 0 .741.337.741.752v2.253z" />
+</symbol>
+<symbol id="win-path" viewBox="0 0 24 24" fill="currentColor">
+<path d="M11 11.467V3.675l-8 1.34v6.452h8zm1 1.066v7.959L21 22v-9.467h-9zm0-1.066h9V2l-9 1.506v7.961zm-1 1.066H3v6.452l8 1.34v-7.792z" />
+</symbol>
+<symbol id="apple-path" viewBox="0 0 12 14" fill="currentColor">
+<path d="M9.47
+ 7.12c-.01-1.1.49-1.94 1.5-2.55a3.23 3.23 0 
+00-2.55-1.34c-1.07-.09-2.23.62-2.66.62-.45 0-1.49-.6-2.3-.6C1.78 3.29 0 
+4.6 0 7.27c0 .8.14 1.6.43 2.45.39 1.1 1.78 3.8 3.23 3.76.76-.02 1.3-.54 
+2.28-.54.95 0 1.45.54 2.3.54 1.46-.02 2.71-2.48 
+3.08-3.59-1.96-.92-1.85-2.7-1.85-2.76zm-1.7-4.94c.81-.97.74-1.86.72-2.18-.73.04-1.57.5-2.05
+ 1.05-.52.6-.83 1.33-.77 2.16.79.06 1.5-.34 2.1-1.03z" />
+</symbol>
+<symbol id="star-path" viewBox="0 0 16 16" fill="currentColor">
+<path d="M15.62
+ 5.78l-5.18-.5L8.38.26a.4.4 0 0 0-.76 0L5.56 
+5.28l-5.18.5c-.37.04-.51.5-.24.76l3.91 3.6-1.14 
+5.33c-.08.37.3.66.61.47L8 13.15l4.48 2.79c.3.2.7-.1.61-.47l-1.14-5.33 
+3.9-3.6c.28-.25.14-.72-.23-.76" />
+</symbol>
+<symbol id="star-half-path" viewBox="0 0 16 16" fill="currentColor">
+<path d="M10 5L8 0 5 5 0 6v1l4 3-1 5v1l5-3 5 3-1-6 4-3V6l-6-1z" fill="#ffcfc0" />
+<path d="M8 0L5 5 1 6v1l4 3-1 5v1l5-3V0z" fill="#ff612e" />
+</symbol>
+<symbol id="star-empty-path" viewBox="0 0 16 16" fill="currentColor">
+<path d="M10 5L8 0 6 5 0 6v1l4 3-1 5 1 1 4-3 4 3 1-1-1-5 4-3V6l-6-1z" fill="#FF612E" fill-rule="evenodd" opacity=".3" />
+</symbol>
+<symbol id="go-path" viewBox="0 0 24 24" fill="currentColor">
+<path d="M15.586 11l-3.293-3.293a1 1 0 1 1 1.414-1.414l5 5a1 1 0 0 1 0 1.414l-5 5a1 1 0 0 1-1.414-1.414L15.586 13H7a1 1 0 0 1 0-2h8.586z" />
+</symbol>
+<symbol id="close-path" viewBox="0 0 24 24" fill="currentColor">
+<path d="M11 11V6a1 1 0 0 1 2 0v5h5a1 1 0 0 1 0 2h-5v5a1 1 0 0 1-2 0v-5H6a1 1 0 0 1 0-2h5z"></path>
+</symbol>
+<symbol id="comma-path" viewBox="0 0 22 18" fill="currentColor">
+<path d="M9.944
+ 3.65c-1.391.761-3.35 2.536-3.658 4.361 2.679.609 4.07 2.789 4.07 4.919 0
+ 2.788-2.267 5.07-5.1 5.07C2.421 18 0 16.124 0 12.524 0 7.403 2.628 
+2.687 6.595 0l3.349 3.65zm11.644 0c-1.391.761-3.35 2.536-3.658 
+4.361C20.609 8.62 22 10.8 22 12.93c0 2.788-2.267 5.07-5.1 5.07-2.834 
+0-5.256-1.876-5.256-5.476 0-5.121 2.628-9.837 6.595-12.524l3.349 3.65z" />
+</symbol>
+<symbol id="dropdown-path" viewBox="0 0 22 18" fill="currentColor">
+<path d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z" />
+</symbol>
+</svg>
+</aside>
+<header>
+<div class="header-pc bg-white hidden-960">
+<div class="container container-bg position-static">
+<div class="flexible flex-align-center flex-justify-between wrap">
+<a href="https://www.tenorshare.com/" class="logo">
+<img src="https://images.tenorshare.com/tenorshare-logo.svg" alt="tenorshare logo">
+
+</a>
+<ul class="nav flexible flex-align-center">
+<li class="pro">
+<a href="javascript:void(0);" class="font-regular">Products</a>
+<div class="pro-link transition-linear bg-white pb-3 pt-4">
+<div class="container container-bg">
+<div class="row">
+<div class="col-lg-4 py-3">
+<div class="d-flex align-items-center sub font-weight-bold">
+<svg width="24" height="24" viewBox="0 0 62 62" xmlns="http://www.w3.org/2000/svg">
+<defs>
+<linearGradient x1="100%" y1="0%" x2="100%" y2="100%" id="header-icon-1">
+<stop stop-color="#329AFE" offset="0%" />
+<stop stop-color="#67C4FF" offset="100%" />
+</linearGradient>
+</defs>
+<g fill="none" fill-rule="evenodd">
+<circle fill="url(#header-icon-1)" cx="31" cy="31" r="31" />
+<path d="M32 17c-7 0-13 6-13 14h-5l6 6 6-6h-4c0-6 4-11 10-11s11 5 11 11-5 11-11 11l-6-2-2 2c2 2 5 3 8 3 8 0 14-6 14-14s-6-14-14-14z" fill="#FFF" fill-rule="nonzero" />
+</g>
+</svg>
+<div class="ml-2">Data Recovery Software</div>
+</div>
+<ul class="pl-4 ml-2 text-small font-regular">
+<li><a class="relative transition-underline" href="https://www.tenorshare.com/products/iphone-data-recovery.html">UltData - iPhone Data Recovery ></a></li>
+<li><a class="relative transition-underline" href="https://www.tenorshare.com/products/android-data-recovery.html">UltData - Android Data Recovery ></a></li>
+<li><a class="relative transition-underline" href="https://4ddig.tenorshare.com/windows-data-recovery.html">4DDiG - Windows Data Recovery ></a></li>
+<li><a class="relative transition-underline" href="https://4ddig.tenorshare.com/mac-data-recovery.html">4DDiG - Mac Data Recovery ></a></li>
+</ul>
+</div>
+<div class="col-lg-4 py-3">
+<div class="d-flex align-items-center sub font-weight-bold">
+<svg width="24" height="24" viewBox="0 0 62 62" xmlns="http://www.w3.org/2000/svg">
+<defs>
+<linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="header-icon-2">
+<stop stop-color="#21BFE6" offset="0%" />
+<stop stop-color="#33E8C5" offset="100%" />
+</linearGradient>
+</defs>
+<g fill="none" fill-rule="evenodd">
+<circle fill="url(#header-icon-2)" cx="31" cy="31" r="31" />
+<path d="M18 23a11 11 0 0015 14l7 7a2 2 0 003 0l1-1v-3l-7-7a11 11 0 00-14-15l6 6v5h-5l-6-6z" fill="#FFF" fill-rule="nonzero" />
+</g>
+</svg>
+<div class="ml-2">System Repair Software</div>
+</div>
+<ul class="pl-4 ml-2 text-small font-regular">
+<li><a class="relative transition-underline" href="https://www.tenorshare.com/products/reiboot.html">ReiBoot - iOS System Repair ></a></li>
+<li class="relative inline-block"><a class="relative transition-underline" href="https://www.tenorshare.com/products/reiboot-for-android.html"> ReiBoot - Android System Repair ></a> </li>
+<li><a class="relative transition-underline" href="https://www.tenorshare.com/products/windows-boot-genius.html">Windows Boot Genius ></a></li>
+<li><a class="relative transition-underline" href="https://www.tenorshare.com/products/tunescare.html">TunesCare - iTunes Repair ></a></li>
+</ul>
+</div>
+<div class="col-lg-4 py-3">
+<div class="d-flex align-items-center sub font-weight-bold">
+<svg width="24" height="24" viewBox="0 0 62 62" xmlns="http://www.w3.org/2000/svg">
+<defs>
+<linearGradient x1="100%" y1="0%" x2="0%" y2="100%" id="header-icon-3">
+<stop stop-color="#6BED6F" offset="0%" />
+<stop stop-color="#20B61D" offset="100%" />
+</linearGradient>
+</defs>
+<g fill="none" fill-rule="evenodd">
+<circle fill="url(#header-icon-3)" cx="31" cy="31" r="31" />
+<path d="M27
+ 17c-6 0-10 4-10 10 0 5 4 10 10 10 5 0 10-5 10-10 0-6-5-10-10-10zm-2 
+11c-2 0-4-1-4-3s2-4 4-4 3 2 3 4-1 3-3 3zm10 2l-5 5 2 3h3v3h3v3l1 
+1h5l1-1v-4-1l-10-9z" fill="#FFF" fill-rule="nonzero" />
+</g>
+</svg>
+<div class="ml-2">Password Unlocker Software</div>
+</div>
+<ul class="pl-4 ml-2 text-small font-regular">
+<li class="relative"><a class="relative transition-underline" href="https://www.tenorshare.com/products/4ukey-unlocker.html">4uKey - iPhone Passcode Unlocker ></a></li>
+<li class="relative"> <a class="relative transition-underline" href="https://www.tenorshare.com/products/4mekey-activation-unlocker.html">4MeKey - iPhone Activation Unlocker ></a> </li>
+<li class="relative"> <a class="relative transition-underline" href="https://www.tenorshare.com/products/android-password-reset-tool.html">4uKey - Android Screen Unlocker ></a> </li>
+<li class="relative"><a class="relative transition-underline" href="https://www.tenorshare.com/products/iphone-backup-unlocker.html">4uKey - iPhone Backup Unlocker ></a></li>
+</ul>
+</div>
+<div class="col-lg-4 py-3">
+<div class="d-flex align-items-center sub font-weight-bold">
+<svg width="24" height="24" viewBox="0 0 62 62" xmlns="http://www.w3.org/2000/svg">
+<defs>
+<linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="header-icon-5">
+<stop stop-color="#96A1FF" offset="0%" />
+<stop stop-color="#4E4EFB" offset="100%" />
+</linearGradient>
+</defs>
+<g fill="none" fill-rule="evenodd">
+<circle fill="url(#header-icon-5)" cx="31" cy="31" r="31" />
+<path d="M45 32a2 2 0 010 3H21l5 5v3c-1 1-2 0-3-1l-9-10h31zm-7-13l9 10H16a2 2 0 010-3h24l-5-5v-2c1-2 2-1 3 0z" fill="#FFF" fill-rule="nonzero" />
+</g>
+</svg>
+<div class="ml-2">WhatsApp Transfer Software</div>
+</div>
+<ul class="pl-4 ml-2 text-small font-regular">
+<li><a class="relative transition-underline" href="https://www.tenorshare.com/whatsapp-transfer-backup-restore.html">iCareFone - WhatsApp Transfer ></a></li>
+</ul>
+</div>
+<div class="col-lg-4 py-3">
+<div class="d-flex align-items-center sub font-weight-bold">
+<svg width="24" height="24" viewBox="0 0 62 62" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<defs>
+<linearGradient x1="0%" y1="0%" x2="100%" y2="100%" id="header-icon-6-c">
+<stop stop-color="#FFAC88" offset="0%" />
+<stop stop-color="#FF6D63" offset="100%" />
+</linearGradient>
+<filter x="-21%" y="-17.7%" width="141.9%" height="141.9%" filterUnits="objectBoundingBox" id="header-icon-1-a">
+<feOffset dy="2" in="SourceAlpha" result="shadowOffsetOuter1" />
+<feGaussianBlur stdDeviation="4" in="shadowOffsetOuter1" result="shadowBlurOuter1" />
+<feColorMatrix values="0 0 0 0 0.552030187 0 0 0 0 0.135812847 0 0 0 0 0.00143757861 0 0 0 0.101732337 0" in="shadowBlurOuter1" />
+</filter>
+<circle id="header-icon-1-b" cx="31" cy="31" r="31" />
+</defs>
+<g fill="none" fill-rule="evenodd">
+<use fill="#000" filter="url(#header-icon-1-a)" xlink:href="#header-icon-1-b" />
+<use fill="url(#header-icon-6-c)" xlink:href="#header-icon-1-b" />
+<g fill="#FFF" fill-rule="nonzero">
+<path d="M43
+ 33l-2 5 1 3-1 1-3-1-5 2-1 3h-2l-1-3-5-2-3 1-1-1 1-3-2-5-3-1v-2l3-1 
+2-5-1-3 1-1 3 1 5-2 1-3h2l1 3 5 2 3-1 1 1-1 3 2 5 3 1v2l-3 1zM31 23a8 8 0
+ 100 16 8 8 0 000-16zm0 13a5 5 0 110-10 5 5 0 010 10z" />
+</g>
+</g>
+</svg>
+<div class="ml-2">iOS Data Manage Tools</div>
+</div>
+<ul class="pl-4 ml-2 text-small font-regular">
+<li><a class="relative transition-underline" href="https://www.tenorshare.com/products/icarefone.html">iCareFone - Free iOS Backup Tool ></a></li>
+<li class="relative inline-block"> <a class="relative transition-underline" href="https://www.tenorshare.com/products/ios-password-manager.html">4uKey - Password Manager ></a> </li>
+</ul>
+</div>
+<div class="col-lg-4 py-3">
+<div class="d-flex align-items-center sub font-weight-bold">
+<svg width="24" height="24" viewBox="0 0 62 62" xmlns="http://www.w3.org/2000/svg">
+<defs>
+<linearGradient x1="100%" y1="0%" x2="100%" y2="100%" id="header-icon-4">
+<stop stop-color="#329AFE" offset="0%" />
+<stop stop-color="#67C4FF" offset="100%" />
+</linearGradient>
+</defs>
+<g fill="none" fill-rule="evenodd">
+<circle fill="url(#header-icon-4)" cx="31" cy="31" r="31" />
+<path d="M17 27a4 4 0 110 8 4 4 0 010-8zm14 0a4 4 0 110 8 4 4 0 010-8zm14 0a4 4 0 110 8 4 4 0 010-8z" fill="#FFF" />
+</g>
+</svg>
+<div class="ml-2">More Tools</div>
+</div>
+<ul class="pl-4 ml-2 text-small font-regular">
+<li><a class="relative transition-underline" href="https://www.tenorshare.com/products/ianygo-change-gps-location-iphone.html">iAnyGo - iOS Location Changer ></a></li>
+<li class="relative inline-block"> <a class="relative transition-underline" href="https://www.tenorshare.com/products/photo-repair.html">Photo Repair ></a> </li>
+<li><a class="relative transition-underline" href="https://www.tenorshare.com/products/video-repair.html">Video Repair ></a></li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</li>
+<li><a href="https://www.tenorshare.com/how-to.html" class="font-regular">Resources</a></li>
+<li><a href="https://www.tenorshare.com/support.html" class="font-regular">Support</a></li>
+<li><a href="https://www.tenorshare.com/store.html" class="font-regular">Store</a></li>
+<li class="search">
+<form action="https://www.tenorshare.com/search.html">
+<label>Please enter search content<input type="text" name="q" class="text" size="10" required placeholder="iphone data recovery" /></label>
+<input type="submit" class="search-btn" value="submit button" />
+<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24">
+<path fill="none" stroke="currentColor" stroke-width="1.5" d="M4 11.01a7.17 7.17 0 0 0 2.06 4.95A7 7 0 1 0 4 11.01zM15 16l4 3" />
+</svg>
+</form>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="header-mb bg-white hidden block-960">
+<div class="container">
+<div class="flexible flex-align-center flex-justify-between wrap">
+<a href="https://www.tenorshare.com/" class="logo">
+<img src="https://images.tenorshare.com/tenorshare-logo.svg" alt="tenorshare logo">
+
+</a>
+<div id="bread-ico" class="bread-ico"> <span class="lines"></span></div>
+</div>
+</div>
+<ul class="menu-list bg-white">
+<li>
+<a href="#this" id="pro-list" class="pro-list"> Products
+<svg viewBox="0 0 32 32" width="16" height="16" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="4">
+<path d="M27 12 L16 24 5 12" />
+</svg>
+</a>
+<ul class="hidden">
+<li>
+<span id="sub-pro-list" class="sub font-medium text-gray actived">
+Data Recovery Software
+<svg viewBox="0 0 32 32" width="16" height="16" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="4">
+<path d="M27 12 L16 24 5 12" />
+</svg>
+</span>
+<ul>
+<li><a href="https://www.tenorshare.com/products/iphone-data-recovery.html">UltData - iPhone Data Recovery ></a></li>
+<li><a href="https://www.tenorshare.com/products/android-data-recovery.html">UltData - Android Data Recovery ></a></li>
+<li><a href="https://4ddig.tenorshare.com/windows-data-recovery.html?tsbanner">4DDiG - Windows Data Recovery ></a></li>
+<li><a href="https://4ddig.tenorshare.com/mac-data-recovery.html">4DDiG - Mac Data Recovery ></a></li>
+</ul>
+</li>
+<li>
+<span id="sub-pro-list" class="sub font-medium text-gray">
+System Repair Software
+<svg viewBox="0 0 32 32" width="16" height="16" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="4">
+<path d="M27 12 L16 24 5 12" />
+</svg>
+</span>
+<ul>
+<li><a href="https://www.tenorshare.com/products/reiboot.html">ReiBoot - iOS System Repair ></a></li>
+<li><a href="https://www.tenorshare.com/products/reiboot-for-android.html">ReiBoot - Android System Repair ></a></li>
+<li><a href="https://www.tenorshare.com/products/windows-boot-genius.html">Windows Boot Genius ></a></li>
+<li><a href="https://www.tenorshare.com/products/tunescare.html">TunesCare - iTunes Repair ></a></li>
+</ul>
+</li>
+<li>
+<span id="sub-pro-list" class="sub font-medium text-gray">
+Password Unlocker Software
+<svg viewBox="0 0 32 32" width="16" height="16" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="4">
+<path d="M27 12 L16 24 5 12" />
+</svg>
+</span>
+<ul>
+<li><a href="https://www.tenorshare.com/products/4ukey-unlocker.html">4uKey - iPhone Passcode Unlocker ></a></li>
+<li><a href="https://www.tenorshare.com/products/4mekey-activation-unlocker.html">4MeKey - iPhone Activation Unlocker ></a></li>
+<li><a href="https://www.tenorshare.com/products/android-password-reset-tool.html">4uKey - Android Screen Unlocker ></a></li>
+<li><a href="https://www.tenorshare.com/products/iphone-backup-unlocker.html">4uKey - iPhone Backup Unlocker ></a></li>
+</ul>
+</li>
+<li>
+<span id="sub-pro-list" class="sub font-medium text-gray">
+WhatsApp Transfer Software
+<svg viewBox="0 0 32 32" width="16" height="16" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="4">
+<path d="M27 12 L16 24 5 12" />
+</svg>
+</span>
+<ul>
+<li><a href="https://www.tenorshare.com/whatsapp-transfer-backup-restore.html">iCareFone - WhatsApp Transfer ></a></li>
+</ul>
+</li>
+<li>
+<span id="sub-pro-list" class="sub font-medium text-gray">
+iOS Data Manage Tools
+<svg viewBox="0 0 32 32" width="16" height="16" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="4">
+<path d="M27 12 L16 24 5 12" />
+</svg>
+</span>
+<ul>
+<li><a href="https://www.tenorshare.com/products/icarefone.html">iCareFone - Free iOS Backup Tool ></a></li>
+<li><a href="https://www.tenorshare.com/products/ios-password-manager.html">4uKey - Password Manager ></a></li>
+</ul>
+</li>
+<li>
+<span id="sub-pro-list" class="sub font-medium text-gray">
+More Tools
+<svg viewBox="0 0 32 32" width="16" height="16" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="4">
+<path d="M27 12 L16 24 5 12" />
+</svg>
+</span>
+<ul>
+<li><a href="https://www.tenorshare.com/products/ianygo-change-gps-location-iphone.html">iAnyGo - iOS Location Changer ></a></li>
+<li><a href="https://www.tenorshare.com/products/photo-repair.html">Photo Repair ></a></li>
+<li><a href="https://www.tenorshare.com/products/video-repair.html">Video Repair ></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="https://www.tenorshare.com/support.html">Support</a></li>
+<li><a href="https://www.tenorshare.com/store.html">Store</a></li>
+<li class="search">
+<form action="https://www.tenorshare.com/search.html">
+<label>Please enter search content<input type="text" name="q" class="text" size="10" required placeholder="iphone data recovery" /></label>
+<input type="submit" class="search-btn" value="submit button" />
+<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24">
+<path fill="none" stroke="currentColor" stroke-width="1.5" d="M4 11.01a7.17 7.17 0 0 0 2.06 4.95A7 7 0 1 0 4 11.01zM15 16l4 3" />
+</svg>
+</form>
+</li>
+</ul>
+</div>
+</header>
+
+<script>
+    (function(h,o,t,j,a,r){
+        h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
+        h._hjSettings={hjid:1827641,hjsv:6};
+        a=o.getElementsByTagName('head')[0];
+        r=o.createElement('script');r.async=1;
+        r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
+        a.appendChild(r);
+    })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
+</script>
+<main>
+<div id="content-wrap">
+<div id="section-1">
+<h1>Tenorshare UltData-Android Data Recovery Giveaway </h1>
+<p class="text">Tenorshare
+ has cooperated with Giveaway of the Day to send free license code of 
+Tenorshare UltData-Android Data Recovery. Please enter your name & email address, then click Get License button </p>
+<div class="form-block">
+<div class="flexible flex-justify-center flex-align-center sm-column">
+<picture>
+<source type="image/webp" srcset="https://images.tenorshare.com/product-box/android-data-recovery-box.webp">
+<img src="https://images.tenorshare.com/product-box/android-data-recovery-box.png" alt="">
+</picture>
+<form action="" id="form">
+<div><label for="firtname">First Name:</label><input id="firtname" type="text"></div>
+<div><label for="email">Email:</label><input id="email" type="email"></div>
+<div><label></label>
+<button class="sys-win btn-submit" type="button" onclick="getCode(3010,33)"><svg width="24" height="24" viewBox="0 0 32 32" fill="currentcolor" stroke="none"><path d="M0 16V6.2l12-1.6V16zM14 4.3L30 2v14H14zM30 18v14l-16-2.3V18zM12 29.5L0 27.9V18h12z"></path>
+</svg>Get License</button>
+<button class="sys-mac hidden btn-submit" type="button" onclick="getCode(3011,34)"><svg width="24" height="24" viewBox="0 0 1024 1024" fill="currentcolor" stroke="none">
+<path d="M605.8
+ 102.4c-89 136.2-139.6 288-158.8 448.7h187.7a823.1 823.1 0 0 0-27.1 
+180.7c99.5-9.6 186.8-35.8 240-69.8l31.5 40.1c-73.3 42.8-168.5 70.7-271.5
+ 81.2a715.3 715.3 0 0 0 12.7 103l.2.8c3.2 15.5 7 31 11.3 
+46.4H1024V102.4H605.8zm138.9 248.8h-53.3V228h53.3v123z"></path>
+<path d="M552.8
+ 788.8l-.2-2c-134.4 5.2-279.4-20-401.6-81.2l25.3-40.1a659.9 659.9 0 0 0 
+43.2 18.4l2.1.8a702.2 702.2 0 0 0 81.8 25.8h.2l6.1 1.6 5.9 1.4 3.4.8 8.5
+ 2 5 1 7 1.5 6.2 1.2 5.8 1.1 8.4 1.5 3.6.7A842.3 842.3 0 0 0 410 
+730l1.5.2c48 5.6 95.6 7 141 5 1.3-43 5.8-86.4 
+13.2-129.1H383.2l2.2-22.2.5-5 2.2-18.3.5-4 3-22c0-.7.2-1.2.3-1.8a1233.9 
+1233.9 0 0 1 6.5-39.8l1.4-7.9a1194 1194 0 0 1 3.5-17.3l2.8-13.5 
+1.2-5.3A1145 1145 0 0 1 545 102.4H0v831h572.9a689.7 689.7 0 0 
+1-20.1-144.6zM247.9 228h53.3v123h-53.3v-123z"></path>
+</svg>Get License</button>
+</div>
+</form>
+</div>
+<p class="note"><strong>Note: </strong>Tenorshare
+ Co., Ltd. guarantees your email address will never be passed on to any 
+other people or companies. Please take it easy! </p>
+</div>
+</div>
+<div id="recommend">
+<h2>Upgrade to Lifetime License with <span class="text-orange">70% Off</span> for Giveaway User</h2>
+<div class="flexible flex-justify-center flex-align-center md-column">
+<div class="left">
+<p class="sub-title">Giveaway Version</p>
+<ul>
+<li class="yes">Only can be use for 12 months</li>
+<li class="no">No upgrade</li>
+<li class="no">No technical support</li>
+</ul>
+</div>
+<div class="center">
+</div>
+<div class="right">
+<div class="labels"><div class="tail tail-start"></div><div class="text">70% OFF</div><div class="tail tail-end"></div></div>
+<p class="sub-title">Lifetime Version</p>
+<ul>
+<li class="yes">Can be used lifetime. No time limitation</li>
+<li class="yes">Enjoy all features, support 35+ file types date recovery</li>
+<li class="yes">24/7/365 technical support.</li>
+<li class="yes">Can be use lifetime. No time limitation</li>
+</ul>
+<div class="price"><del>Original $149</del><strong>$49.95</strong></div>
+<div class="sys-win flexible flex-justify-center">
+<a class="button button-buy" href="https://apix.tenorshare.com/api/cart/jump/pid/1110111224">Upgrade Now</a>
+<a class="button button-dow" href="https://download.tenorshare.com/go/ultdata-android_1054.exe"><svg width="24" height="24" viewBox="0 0 32 32" fill="currentcolor" stroke="none">
+<path d="M0 16V6.2l12-1.6V16zM14 4.3L30 2v14H14zM30 18v14l-16-2.3V18zM12 29.5L0 27.9V18h12z"></path>
+</svg>Free Trail</a>
+</div>
+<div class="sys-mac flexible flex-justify-center hidden">
+<a class="button button-buy" href="https://apix.tenorshare.com/api/cart/jump/pid/1110111214">Upgrade Now</a>
+<a class="button button-dow" href="https://download.tenorshare.com/downloads/tenorshare-android-data-recovery-pro-for-mac-trial.dmg"><svg width="24" height="24" viewBox="0 0 1024 1024" fill="currentcolor" stroke="none">
+<path d="M605.8
+ 102.4c-89 136.2-139.6 288-158.8 448.7h187.7a823.1 823.1 0 0 0-27.1 
+180.7c99.5-9.6 186.8-35.8 240-69.8l31.5 40.1c-73.3 42.8-168.5 70.7-271.5
+ 81.2a715.3 715.3 0 0 0 12.7 103l.2.8c3.2 15.5 7 31 11.3 
+46.4H1024V102.4H605.8zm138.9 248.8h-53.3V228h53.3v123z"></path>
+<path d="M552.8
+ 788.8l-.2-2c-134.4 5.2-279.4-20-401.6-81.2l25.3-40.1a659.9 659.9 0 0 0 
+43.2 18.4l2.1.8a702.2 702.2 0 0 0 81.8 25.8h.2l6.1 1.6 5.9 1.4 3.4.8 8.5
+ 2 5 1 7 1.5 6.2 1.2 5.8 1.1 8.4 1.5 3.6.7A842.3 842.3 0 0 0 410 
+730l1.5.2c48 5.6 95.6 7 141 5 1.3-43 5.8-86.4 
+13.2-129.1H383.2l2.2-22.2.5-5 2.2-18.3.5-4 3-22c0-.7.2-1.2.3-1.8a1233.9 
+1233.9 0 0 1 6.5-39.8l1.4-7.9a1194 1194 0 0 1 3.5-17.3l2.8-13.5 
+1.2-5.3A1145 1145 0 0 1 545 102.4H0v831h572.9a689.7 689.7 0 0 
+1-20.1-144.6zM247.9 228h53.3v123h-53.3v-123z"></path>
+</svg>Free Trail</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</main>
+<footer>
+<div class="tp-cont">
+<div class="container container-md">
+<div class="flexible column-960">
+<div class="cell">
+<div class="sub font-medium collapse">Useful links <svg class="d-lg-none" width="24" height="24" viewBox="0 0 24 24"> <use xlink:href="#dropdown-path"></use> </svg></div>
+<ul class="link-group">
+<li><a class="relative transition-underline" href="https://www.tenorshare.com/how-to.html" title="how to tips">Knowledge Base</a></li>
+<li><a class="relative transition-underline" href="https://www.tenorshare.com/usb-debugging-android.html" title="USB Debugging Android">USB Debugging Android</a></li>
+<li><a class="relative transition-underline" href="https://www.tenorshare.com/ios-14/" title="iOS 13 Tips">iOS 14 Tips </a></li>
+<li><a class="relative transition-underline" href="https://www.tenorshare.com/iphone-recovery/" title="iPhone Data Recovery">iPhone Data Recovery</a></li>
+<li><a class="relative transition-underline" href="https://www.tenorshare.com/samsung/" title="Samsung Data Recovery">Samsung Data Recovery</a></li>
+<li><a class="relative transition-underline" href="https://www.tenorshare.com/android-recovery/" title="Android Data Recovery">Android Data Recovery</a></li>
+</ul>
+</div>
+<div class="cell">
+<div class="sub font-medium collapse">Company <svg class="d-lg-none" width="24" height="24" viewBox="0 0 24 24"> <use xlink:href="#dropdown-path"></use> </svg></div>
+<ul class="link-group">
+<li><a class="relative transition-underline" href="https://www.tenorshare.com/company/aboutus.html" title="about">About</a></li>
+<li><a class="relative transition-underline" href="https://www.tenorshare.com/support/contact.html" title="Contact us">Contact Us</a></li>
+<li><a class="relative transition-underline" href="https://www.tenorshare.com/company/partners.html" title="Business">Business</a></li>
+<li><a class="relative transition-underline" href="https://www.tenorshare.com/privacy.html" title="Privacy">Privacy</a></li>
+<li><a class="relative transition-underline" href="https://www.tenorshare.com/support/terms-and-conditions.html" title="Terms & Conditions">Terms & Conditions</a></li>
+<li><a class="relative transition-underline" href="https://www.tenorshare.com/cookies-privacy.html" title="Cookies Policy">Cookies Policy(UPDATED)</a></li>
+</ul>
+</div>
+<div class="cell follow">
+<div class="sub font-medium">Newsletter</div>
+<form class="relative" id="newsletter">
+<label>Please enter email<input type="email" required placeholder="Please enter email"></label>
+<button type="submit" value="submit button" name="newsletterbutton">
+<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" class="transition-linear">
+<path fill="currentColor" d="M15.6 11l-3.3-3.3a1 1 0 1 1 1.4-1.4l5 5c.4.4.4 1 0 1.4l-5 5a1 1 0 0 1-1.4-1.4l3.3-3.3H7a1 1 0 0 1 0-2h8.6z" />
+</svg>
+</button>
+<p class="text-orange text-small hidden">Thank you for subscribing</p>
+</form>
+<div class="sub font-medium">Follow Us</div>
+<ul class="flexible flex-align-center">
+<li><a href="https://www.facebook.com/TenorshareOfficial/">
+<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32">
+<path fill="currentColor" d="M12.76 12.77H11v2.93h1.76V25h3.6v-9.3h2.43s.22-1.4.34-2.94h-2.75v-2c0-.3.4-.7.78-.7h1.97V7h-2.68c-3.78 0-3.7 2.94-3.7 3.37v2.4z" />
+</svg>
+</a></li>
+<li><a href="https://twitter.com/Tenorshare">
+<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32">
+<path fill="currentColor" d="M27
+ 9c-.8.4-1.7.6-2.6.7 1-.5 1.7-1.4 2-2.4-.9.5-1.8.9-2.9 
+1-.8-.8-2-1.3-3.3-1.3-2.5 0-4.5 2-4.5 4.3l.1 1a13 13 0 0 
+1-9.3-4.5c-.4.6-.6 1.4-.6 2.1 0 1.5.8 2.8 2 3.6-.7 0-1.4-.2-2-.5 0 2.1 
+1.5 3.8 3.6 4.2a4.9 4.9 0 0 1-2 .1c.5 1.7 2.2 3 4.2 3A9.4 9.4 0 0 1 5 
+22.1c2 1.2 4.4 1.9 7 1.9 8.2 0 12.8-6.5 12.8-12.2v-.6c.8-.6 1.6-1.3 
+2.2-2.2z" />
+</svg>
+</a></li>
+<li><a href="https://www.youtube.com/user/TenorshareOfficial">
+<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32">
+<path fill="currentColor" d="M27.06
+ 8.55C26.2 7.45 24.6 7 21.54 7H10.46c-3.13 0-4.76.48-5.62 1.64C4 9.78 4 
+11.46 4 13.8v4.42C4 22.71 5 25 10.46 25h11.08c2.65 0 4.12-.4 
+5.07-1.36.97-1 1.39-2.62 1.39-5.43V13.8c0-2.45-.07-4.14-.94-5.24zm-8.44 
+8.15l-4.59 2.7a.64.64 0 0 1-.69-.02.82.82 0 0 
+1-.34-.68v-5.4c0-.28.13-.54.34-.68a.63.63 0 0 1 .7-.03l4.58 
+2.7c.23.13.38.4.38.7 0 .3-.15.57-.38.7z" />
+</svg>
+</a></li>
+<li class="secure"> <a href="https://www.siteadvisor.com/sitereport.html?url=www.tenorshare.com">
+<svg xmlns="http://www.w3.org/2000/svg" width="106" height="32" viewBox="0 0 106 32">
+<path fill="currentColor" d="M54.37
+ 18.96l-2.74-1.6-.1.4a2.7 2.7 0 0 1-2.52 1.4 3.02 3.02 0 0 
+1-3.14-3.11c0-1.8 1.32-3.12 3.14-3.12 1 0 1.82.5 2.52 1.41l.2.3 
+2.74-1.6-.2-.3A6.4 6.4 0 0 0 49 10.01a6.07 6.07 0 0 0-6.37 6.03A6.07 
+6.07 0 0 0 49 22.08c2.12 0 4.04-1 5.15-2.81l.2-.3zm-.1 
+3.12H58l1.1-2.71h5.57l1.01 2.71h3.74L62.76 6.1h-3.34l.91 2.11-6.07 
+13.87zm7.58-9.65l1.51 3.72h-3.03l1.52-3.72zm9.1 
+9.65h3.23v-7.14h2.13v-3.01h-2.13v-1.4c0-.61.4-1.31 1.22-1.31.4 0 
+.7.1.9.2l.41.1 1.32-2.92-.4-.1c-.62-.2-1.42-.3-2.03-.3-1.52 
+0-2.73.5-3.54 1.4a4.7 4.7 0 0 0-1.11 
+3.12v1.31h-1.42v3.02h1.42v7.03zM27.37 6v16.08h3.54v-9.15l3.43 2.52 
+3.44-2.52v9.15h3.54V6l-6.98 5.23L27.37 6zm56.32 4.02a6.04 6.04 0 1 0 0 
+12.06c1.92 0 3.64-.9 4.95-2.41l-2.63-1.4c-.7.7-1.51 1-2.42 1-1.32 
+0-2.53-.9-2.83-2.01h8.9v-.8a6.26 6.26 0 0 0-5.97-6.44zm-2.83 4.62c.4-1.1
+ 1.31-1.7 2.52-1.7 1.22 0 2.13.6 2.63 1.7h-5.15zm16.17-4.52a6.04 6.04 0 1
+ 0 0 12.06c1.93 0 3.64-.9 4.96-2.41l-2.63-1.4c-.7.7-1.52 1-2.43 1-1.31 
+0-2.52-.9-2.83-2.01h8.9v-.8a6.12 6.12 0 0 0-5.97-6.44zm-2.93 4.52c.4-1.1
+ 1.32-1.7 2.53-1.7 1.21 0 2.12.6 2.63 1.7H94.1zm-82.4-4.62L3 
+6v15.98L11.7 26l8.7-4.02V6l-8.7 4.02zm5.25 9.65l-5.15 
+2.41-5.16-2.41v-8.14l5.16 2.41 5.15-2.41v8.14z" />
+</svg>
+</a> </li>
+<li>
+<style>
+                #DigiCertClickID_DSYPCcgBSeal 
+{background: url(https://www.tenorshare.com/images/norton-icon.svg) 
+center no-repeat !important;height: 40px;}
+                #DigiCertClickID_DSYPCcgBSeal img {opacity: 0;}
+              </style>
+<div id="DigiCertClickID_DSYPCcgB" data-language="en"></div>
+</li>
+</ul>
+<p class="copyright text-small d-none d-lg-block">Copyright
+ © 2021 Tenorshare Co.,Ltd. All rights reserved. 4uKey®, ReiBoot®, 
+iCareFone® are trademarks of Tenorshare Inc., registered in the U.S. 
+iPod®, iPhone®, iPad®, iTunes® and Mac® are trademarks of Apple Inc., 
+registered in the U.S. and other countries. Tenorshare's software is not
+ developed by or affiliated with Apple Inc.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="bt-cont text-small">
+<div class="container container-md">
+<div class="flexible flex-justify-between column-769">
+<div class="lft relative mb-769-20">
+<div class="flexible flex-align-center transition-linear change-reg"> Change Language
+<div class="transition-ease reg-lst">
+<ul>
+<li class="it"><a href="https://www.tenorshare.com/it/">Italiano</a></li>
+<li class="de"><a href="https://www.tenorshare.de/">Deutsch</a></li>
+<li class="es"><a href="https://www.tenorshare.es/">Español</a></li>
+<li class="fr"><a href="https://www.tenorshare.fr/">Français</a></li>
+<li class="ru"><a href="https://www.tenorshare.ru/">Pусский</a></li>
+<li class="br"><a href="https://br.tenorshare.com/">Português</a></li>
+<li class="jp"><a href="https://www.tenorshare.jp/">日本語</a></li>
+<li class="cn"><a href="https://www.tenorshare.cn/">简体中文</a></li>
+<li class="tw"><a href="https://www.tenorshare.tw/">繁体中文</a></li>
+<li class="kr"><a href="https://www.tenorshare.kr/">한국어</a></li>
+<li class="ar"><a href="https://www.tenorshare.com/ar/">العربية</a></li>
+<li class="um"><a href="https://www.tenorshare.com/">English</a></li>
+</ul>
+</div>
+</div>
+</div>
+<p class="rgt">Copyright © 2007-2021 Tenorshare Co., Ltd. All Rights Reserved.</p>
+</div>
+</div>
+</div>
+</footer>
+
+<aside id="banner-seasonal" class="relative hidden">
+<a href="https://www.tenorshare.com/products/4mekey-activation-unlocker.html?utm_source=tenorshare&utm_medium=footerbanner&utm_campaign=4mekeynewfeature0305" target="_blank" style="position:
+ fixed;bottom: 0;left: 0;width: 100%;height: 5.73vw;font-size: 
+0;line-height: 0;display: flex;justify-content: center;z-index: 
+20;background: 
+url(https://images.tenorshare.com/banner/4mekey-turn-off-find-my-banner.jpg)
+ no-repeat center bottom;background-size: contain;"></a>
+<span class="close-btn" style="position:
+ fixed;bottom: 10px;z-index:2;transform:translateY(-50%) 
+rotate(45deg);right: 40px;width: 32px;height: 32px;line-height: 
+32px;text-align: center;background: #fff;border-radius: 
+50%;cursor:pointer;box-shadow: 0 0 10px 
+rgba(0,0,0,0.2);font-size:0;z-index:30"><svg width="32" height="32" viewBox="0 0 24 24">
+<use xlink:href="#close-path"></use>
+</svg></span>
+</aside>
+
+<a href="#" class="return-top" id="return-top" style=" z-index: 40;"></a>
+
+<script type="text/javascript">
+var __dcid = __dcid || 
+[];__dcid.push(["DigiCertClickID_DSYPCcgB", "15", "s", "black", 
+"DSYPCcgB"]);(function(){var 
+cid=document.createElement("script");cid.async=true;cid.src="//seal.digicert.com/seals/cascade/seal.min.js";var
+ s = document.getElementsByTagName("script");var ls = s[(s.length - 
+1)];ls.parentNode.insertBefore(cid, ls.nextSibling);}());
+</script>
+
+<script src="https://www.tenorshare.com/assets/app.bundle.js" type="text/javascript"></script>
+<script>
+  var flag = false;
+  function getCode(product_id,email_id) {
+    if(flag) {
+      return;
+    }
+    var submitBtn = document.getElementsByClassName('btn-submit');
+    submitBtn = Array.from(submitBtn);
+    submitBtn.forEach(item => {
+      item.classList.add('disabled');
+    });
+    flag = true;
+    fetch('https://integrated.icarefone.cn/giveaway', {
+      method: 'POST',
+      headers: {
+        'content-type': 'application/json'
+      },
+      body: JSON.stringify({
+        firstname: document.getElementById('firtname').value,
+        email: document.getElementById('email').value,
+        campaign: 21,
+        product: product_id,
+        eid: email_id
+      })
+    }).then(function(response) {
+      return response.json();
+    }).then(function(response) {
+      console.log('response:',response)
+      if(parseInt(response.status) === 200) {
+        alert('Successfully!');
+      } else {
+        alert(response.msg);
+      }
+    }).finally(function() {
+      document.getElementById('form').reset();
+      flag = false;
+      submitBtn.forEach(item => {
+        item.classList.remove('disabled');
+      });
+    });
+  }
+</script>
+</body>
+</html>
